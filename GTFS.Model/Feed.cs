@@ -14,37 +14,37 @@ namespace GTFS.Model
         /// One or more transit agencies that provide the data in the feed.
         /// </summary>
         [Required]
-        public IList<Agency> Agency { get; private set; }
+        public List<Agency> Agency { get; private set; }
 
         /// <summary>
         /// Individual locations where vehicles pick up or drop off passengers.
         /// </summary>
         [Required]
-        public IList<Stop> Stops { get; private set; }
+        public List<Stop> Stops { get; private set; }
 
         /// <summary>
         /// Transit routes. A route is a group of trips that are displayed to riders as a single service.
         /// </summary>
         [Required]
-        public IList<Route> Routes { get; private set; }
+        public List<Route> Routes { get; private set; }
 
         /// <summary>
         /// Trips for each route. A trip is a sequence of two or more stops that occurs at a specific time.
         /// </summary>
         [Required]
-        public IList<Trip> Trips { get; private set; }
+        public List<Trip> Trips { get; private set; }
 
         /// <summary>
         /// Times that a vehicle arrives at and departs from individual stops for each trip.
         /// </summary>
         [Required]
-        public IList<StopTime> StopTimes { get; private set; }
+        public List<StopTime> StopTimes { get; private set; }
 
         /// <summary>
         /// Dates for service Ids defined in the calendar.  If CalendarDates includes ALL dates of service, this file may be specified instead of Calendar.
         /// </summary>
         [Required]
-        public IList<Calendar> Calendar { get; private set; }
+        public List<Calendar> Calendar { get; private set; }
 
         #endregion
 
@@ -52,37 +52,37 @@ namespace GTFS.Model
         /// <summary>
         /// Exceptions for the service IDs defined in the calendar.txt file. If calendar_dates.txt includes ALL dates of service, this file may be specified instead of calendar.txt.
         /// </summary>
-        public IList<CalendarDate> CalendarDates { get; private set; }
+        public List<CalendarDate> CalendarDates { get; private set; }
         
         /// <summary>
         /// Fare information for a transit organization's routes.
         /// </summary>
-        public IList<FareAttribute> FareAttributes { get; private set; }
+        public List<FareAttribute> FareAttributes { get; private set; }
         
         /// <summary>
         /// Rules for applying fare information for a transit organization's routes.
         /// </summary>
-        public IList<FareRule> FareRules { get; private set; }
+        public List<FareRule> FareRules { get; private set; }
         
         /// <summary>
         /// Rules for drawing lines on a map to represent a transit organization's routes.
         /// </summary>
-        public IList<Shape> Shapes { get; private set; }
+        public List<Shape> Shapes { get; private set; }
         
         /// <summary>
         /// Headway (time between trips) for routes with variable frequency of service.
         /// </summary>
-        public IList<Frequency> Frequencies { get; private set; }
+        public List<Frequency> Frequencies { get; private set; }
         
         /// <summary>
         /// Rules for making connections at transfer points between routes.
         /// </summary>
-        public IList<Transfer> Transfers { get; private set; }
+        public List<Transfer> Transfers { get; private set; }
         
         /// <summary>
         /// Additional information about the feed itself, including publisher, version, and expiration information.
         /// </summary>
-        public IList<FeedInfo> FeedInfo { get; private set; }
+        public List<FeedInfo> FeedInfo { get; private set; }
         #endregion
     }
 }

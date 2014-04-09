@@ -1,15 +1,16 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GTFS.Model")]
-[assembly: AssemblyDescription("Models for the General Transit Feed Specification")]
+[assembly: AssemblyTitle("GTFS.IO")]
+[assembly: AssemblyDescription("Classes to help for Loading and Saving GTFS feeds.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Baldur87")]
-[assembly: AssemblyProduct("GTFS.Model")]
+[assembly: AssemblyProduct("GTFS.IO")]
 [assembly: AssemblyCopyright("Copyright © Patrick Greenwell 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("en")]
@@ -20,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e28766bc-3c39-471d-9dda-504bd62bd9f0")]
+[assembly: Guid("4330540a-ad8d-4534-8606-2bfecd2737c6")]
 
 // Version information for an assembly consists of the following four values:
 //
